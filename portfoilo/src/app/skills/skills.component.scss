@@ -1,0 +1,36 @@
+.skills-diagonal {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    transform: rotate(-10deg); /* tilt the entire container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 2rem;
+    animation: moveSkills 10s linear infinite;
+  }
+  
+//   .skills span {
+//     color: white;
+//     background: #ff0044;
+//     padding: 10px 20px;
+//     border-radius: 30px;
+//     font-weight: bold;
+//     white-space: nowrap;
+//   }
+  
+  @keyframes moveSkills {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

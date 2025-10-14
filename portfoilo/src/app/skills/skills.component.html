@@ -1,0 +1,8 @@
+<div class="skills-diagonal mt-96">
+    <div class="skills">
+        @for(skill of skills; track skill.id){
+            <app-skill [skill]="skill.title"></app-skill>
+        }
+    </div>
+  </div>
+  
