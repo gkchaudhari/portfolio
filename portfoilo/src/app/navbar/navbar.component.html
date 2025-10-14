@@ -1,0 +1,7 @@
+<div>
+    @for(navlink of nvaLinks; track navlink.link){
+        <button [routerLink]="[`\${navlink?.link}`]">
+            {{navlink?.title}}
+        </button>
+    }
+</div>
