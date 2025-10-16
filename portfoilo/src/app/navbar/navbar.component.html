@@ -1,7 +1,50 @@
-<div>
+<!-- <div class="flex gap-10 m-auto w-full text-center items-center justify-center mt-10 text-3xl ">
     @for(navlink of nvaLinks; track navlink.link){
         <button [routerLink]="[`\${navlink?.link}`]">
             {{navlink?.title}}
         </button>
     }
-</div>
+</div> -->
+
+<!-- profile Image -->
+ <div class="flex items-center gap-16">
+    <img src="../../assets/icons/profile_photo_circle.png" alt="profile_photo_circle" height="40px" width="250px">
+    <div class="text-3xl text-gray-400 flex flex-col">
+        <span class="text-5xl">Ganesh Chaudhari</span>
+        <span class="text-sm">Software Engineer</span>
+        <span>Skills List with icons</span>
+    </div>
+ </div>
+
+ <!-- implement a stepper -->
+
+ <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step>
+        <ng-template matStepLabel>Resume</ng-template>
+        <app-resume></app-resume>
+        <div>
+          <button matButton matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Work Experience</ng-template>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Skills</ng-template>
+      <div>
+        <button matButton matStepperPrevious>Back</button>
+        <button matButton (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Contact</ng-template>
+      <div>
+        <button matButton matStepperPrevious>Back</button>
+        <button matButton (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
