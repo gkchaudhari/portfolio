@@ -1,1 +1,33 @@
+ <app-navbar></app-navbar>
+ <!-- implement a stepper -->
+ <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step>
+        <ng-template matStepLabel>Resume</ng-template>
+        <app-resume></app-resume>
+        <div>
+          <button matButton matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Work Experience</ng-template>
+        <div>
+          <button matButton matStepperPrevious>Back</button>
+          <button matButton matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Skills</ng-template>
+      <div>
+        <button matButton matStepperPrevious>Back</button>
+        <button matButton (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Contact</ng-template>
+      <div>
+        <button matButton matStepperPrevious>Back</button>
+        <button matButton (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
 <app-skills></app-skills>

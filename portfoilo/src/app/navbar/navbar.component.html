@@ -1,12 +1,3 @@
-<!-- <div class="flex gap-10 m-auto w-full text-center items-center justify-center mt-10 text-3xl ">
-    @for(navlink of nvaLinks; track navlink.link){
-        <button [routerLink]="[`\${navlink?.link}`]">
-            {{navlink?.title}}
-        </button>
-    }
-</div> -->
-
-<!-- profile Image -->
  <div class="flex items-center gap-16">
     <img src="../../assets/icons/profile_photo_circle.png" alt="profile_photo_circle" height="40px" width="250px">
     <div class="text-3xl text-gray-400 flex flex-col">
@@ -14,61 +5,28 @@
         <span class="text-md">Software Engineer</span>
         <div>
           <ul class="flex">
-            <li><img src="../../assets/icons/JavaScript.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/TypeScript.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/HTML5.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/CSS3.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/C#.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Angular.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/React.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Next.js.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Node.js.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/NET core.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/MongoDB.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Mongoose.js.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/PostgresSQL.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Cosmos BD.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Docker.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Kubernetes.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Azure.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Visual Studio Code (VS Code).png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/Visual Studio.png" alt="javascript" width="60px" ></li>
-            <li><img src="../../assets/icons/WebStorm.png" alt="javascript" width="60px" ></li>
-
+            <li><img src="../../assets/icons/JavaScript.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/TypeScript.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/HTML5.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/CSS3.png" alt="javascript" width="30px" ></li>
+            <!-- <li><img src="../../assets/icons/C#.png" alt="javascript" width="30px" ></li> -->
+            <li><img src="../../assets/icons/Angular.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/React.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Next.js.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Node.js.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/NET core.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/MongoDB.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Mongoose.js.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/PostgresSQL.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Cosmos BD.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Docker.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Kubernetes.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Azure.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Visual Studio Code (VS Code).png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/Visual Studio.png" alt="javascript" width="30px" ></li>
+            <li><img src="../../assets/icons/WebStorm.png" alt="javascript" width="30px" ></li>
           </ul>
         </div>
     </div>
  </div>
 
- <!-- implement a stepper -->
-
- <mat-stepper [linear]="isLinear" #stepper>
-    <mat-step>
-        <ng-template matStepLabel>Resume</ng-template>
-        <app-resume></app-resume>
-        <div>
-          <button matButton matStepperNext>Next</button>
-        </div>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Work Experience</ng-template>
-        <div>
-          <button matButton matStepperPrevious>Back</button>
-          <button matButton matStepperNext>Next</button>
-        </div>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Skills</ng-template>
-      <div>
-        <button matButton matStepperPrevious>Back</button>
-        <button matButton (click)="stepper.reset()">Reset</button>
-      </div>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Contact</ng-template>
-      <div>
-        <button matButton matStepperPrevious>Back</button>
-        <button matButton (click)="stepper.reset()">Reset</button>
-      </div>
-    </mat-step>
-  </mat-stepper>
